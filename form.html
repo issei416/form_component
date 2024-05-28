@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <main>
+        <div class="left_container">
+            <form class="form_container" action="table.html">
+                <div class="field">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                    <div class="gender_item"><input type="radio" name="gender" id="gender1" value="male"> <label
+                            for="gender1">male</label></div>
+                    <div class="gender_item"><input type="radio" name="gender" id="gender2" value="female"><label
+                            for="gender2">female</label></div>
+                    <div class="gender_item"><input type="radio" name="gender" id="gender3" value="other"><label
+                            for="gender3">other</label></div>
+                </div>
+                <div class="field">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+                <div class="field">
+                    <label for="tel">Mobile no</label>
+                    <input type="tel" name="tel" id="tel" required>
+                </div>
+                <div class="field">
+                    <label for="experience">Experience</label>
+                    <input type="number" name="experience" id="experience" min=2 required>
+                </div>
+                <div class="field">
+                    <label for="place">Place</label>
+                    <select name="select" id="place">
+                        <option value="none"></option>
+                        <option value="Tamil nadu">Tamil Nadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    </select>
+                </div>
+                <div class="skills">
+                    <label for="skills">SKILLS </label>
+                    <div class="skill_list">
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill1">
+                            <label for="skill1">Java</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill2">
+                            <label for="skill2">JavaScript</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill3">
+                            <label for="skill3">HTML</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill4">
+                            <label for="skill4">CSS</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill5">
+                            <label for="skill5">SQL</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill6">
+                            <label for="skill6">JDBC</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill7">
+                            <label for="skill7">React</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill8">
+                            <label for="skill8">Node js</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill9">
+                            <label for="skill9">Python</label>
+                        </div>
+                        <div class="skill_item">
+                            <input type="checkbox" name="skills" id="skill10">
+                            <label for="skill10">AWS</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field" id="resume">
+                    <label for="resume">Resume</label>
+                    <input type="file" name="resume" id="resume" required>
+                </div>
+                <div class="button_container">
+                    <div class="button">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right_container">
+            <div class="right_content">
+                <h1>Hello</h1>
+                <h1>Let's chat &#128075;</h1>
+                <p>Join our vibrant learning community and never miss an update. Subscribe now to get the latest course
+                    announcements, expert tips, and special subscriber-only benefits. Elevate your skills with every
+                    click!</p>
+            </div>
+            <div class="subscribe_button">
+                <span>Unlock your true potential by subscribing to our <span class="premium">PREMIUM</span> plan</span>
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

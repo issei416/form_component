@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(238, 5, 187), rgb(255, 209, 2));
+}
+
+input {
+    background-color: rgb(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+.left_container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container {
+    background: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    width: 40%px;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 20px;
+    font-family: 'poppins';
+    box-shadow: -10px 10px 10px rgb(0, 0, 0, 0.7);
+}
+
+label {
+    font-weight: 500;
+}
+
+label::after {
+    content: " *";
+    color: rgb(231, 80, 80);
+}
+
+.field {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.field input {
+    width: 60%;
+}
+
+.field select {
+    width: 62.5%;
+    padding: 5px;
+    background: rgb(0, 0, 0, .2);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gender label::after {
+    content: none;
+}
+
+.gender_item {
+    display: flex;
+    gap: 5px;
+}
+
+.gender_item label {
+    font-weight: normal;
+}
+
+.gender_item label::after {
+    content: none;
+}
+
+.skill_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5px;
+}
+
+.skill_item {
+    margin: 2px;
+}
+
+.skill_item label {
+    margin-left: 5px;
+    font-weight: normal;
+    font-family: 'roboto';
+    font-weight: 380;
+    letter-spacing: 2px;
+}
+
+.skill_item label::after {
+    content: none;
+}
+
+.button_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button input {
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: 1px solid rgb(3, 3, 3);
+}
+
+.button input:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.right_container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.right_container h1 {
+    font-family: 'poppins';
+    font-size: 60px;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+.right_container p {
+    font-family: 'poppins';
+    margin: 10px;
+    font-size: 18px;
+    width: 70%;
+    font-weight: 300;
+    letter-spacing: 0.7px;
+}
+
+.right_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe_button {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 17px;
+    justify-self: center;
+    font-family: 'roboto';
+}
+
+.subscribe_button button {
+    margin-left: 20px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0, .8);
+    color: white;
+    font-size: 16px;
+    box-shadow: -5px 5px 5px rgb(0, 0, 0, 0.5);
+    transition: all ease-in-out 0.3s;
+}
+
+.subscribe:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.premium {
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: max-content;
+    }
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left_container {
+        width: 100%;
+    }
+
+    .form_container {
+        width: 50%;
+    }
+
+    .right_container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form_container {
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    .right_container h1 {
+        font-size: 48px;
+    }
+
+    .right_container p {
+        width: 90%;
+        font-size: 16px;
+    }
+}
