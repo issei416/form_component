@@ -75,6 +75,10 @@ label::after {
     color: white;
 }
 
+.field select option {
+    background: rgb(0, 0, 0,0.7);
+}
+
 .gender {
     display: flex;
     justify-content: space-between;
