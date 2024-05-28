@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TABLE
+        </title>
+        <style>
+            body {
+                height: 95vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Segoe UI';
+            }
+            table {
+                width: 50%;
+                height: 200px;
+                border: 2px solid black;
+            }
+            table th {
+                border: 2px solid black;
+                text-align: center;
+                font-family: Arial;
+                font-weight: 800;
+            }
+            table td {
+                border: 2px solid black;
+                text-align: center;
+                color: black;
+                font-weight: 500;
+            }
+            table tr {
+                background-color: rgb(206, 231, 113);
+            }
+            table tr:nth-of-type(2n){
+                background-color: rgb(143, 156, 21);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>TIME TABLE</h1>
+        <table>
+            <tr>
+                <th rowspan=2>Topics</td>
+                <th colspan=4>Javascript</td>
+            </tr>
+            <tr>
+                <th>Hour1</td>
+                <th>Hour2</td>
+                <th>Hour3</td>
+                <th>Hour4</td>                                                           
+            </tr>
+            <tr>
+                <td>Variable</td>
+                <td>var</td>
+                <td>let</td>
+                <td>const</td>
+                <td rowspan=2>practice</td>
+            </tr>
+            <tr>
+                <td>Operator</td>
+                <td>Arithmetic & Assignment</td>
+                <td>relational</td>
+                <td>logical</td>
+            </tr>
+            <tr>
+                <td>Statements</td>
+                <td>If and If Else</td>
+                <td>ladder & nested</td>
+                <td>Loop</td>
+                <td>Branch</td>
+            </tr>
+            <tr>
+                <td>Function</td>
+                <td>Functions Intro</td>
+                <td colspan="2">Types Of Function</td>
+                <td>Recap</td>
+            </tr>
+        </table>
+    </body>
+</html>
